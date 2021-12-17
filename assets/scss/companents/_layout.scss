@@ -1,0 +1,13 @@
+body {
+    font-family: var(--font-poppins);
+    color: var(--light-black-color);
+    background-color: var(--primary-color);
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+
+    }
+}
