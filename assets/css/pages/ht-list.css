@@ -1,0 +1,178 @@
+/*Reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* playfair-display-regular - latin-ext_latin */
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-regular.woff2") format("woff2"), url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-regular.woff") format("woff"), url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-regular.ttf") format("truetype"), url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-regular.svg#PlayfairDisplay") format("svg");
+  /* Legacy iOS */
+}
+/* playfair-display-600 - latin-ext_latin */
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-600.eot?#iefix") format("embedded-opentype"), url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-600.woff2") format("woff2"), url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-600.woff") format("woff"), url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-600.ttf") format("truetype"), url("../../fonts/playfair-display/playfair-display-v25-latin-ext_latin-600.svg#PlayfairDisplay") format("svg");
+  /* Legacy iOS */
+}
+/* poppins-regular - latin-ext_latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/poppins/poppins-v15-latin-ext_latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../../fonts/poppins/poppins-v15-latin-ext_latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/poppins-v15-latin-ext_latin-regular.woff2") format("woff2"), url("../../fonts/poppins/poppins-v15-latin-ext_latin-regular.woff") format("woff"), url("../../fonts/poppins/poppins-v15-latin-ext_latin-regular.ttf") format("truetype"), url("../../fonts/poppins/poppins-v15-latin-ext_latin-regular.svg#Poppins") format("svg");
+  /* Legacy iOS */
+}
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --light-black-color: #333333;
+  --grey-color: #999999;
+  --primary-color: #FFF8EA;
+  --secondary-color: #E9D29E;
+}
+
+body {
+  font-family: var(--font-poppins);
+  color: var(--light-black-color);
+  background-color: var(--primary-color);
+}
+body .container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+body .container .content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+body .container .content .corners .left-logo {
+  left: 30px;
+  width: 100px;
+  height: 50px;
+}
+body .container .content .corners .left-logo img {
+  width: 100%;
+  height: 100%;
+}
+body .container .content .corners .right-logo {
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .container .content .corners .right-logo .ht {
+  width: 50px;
+  height: 25px;
+  margin-right: 5px;
+}
+body .container .content .corners .right-logo .hamburger {
+  width: 30px;
+  height: 15px;
+}
+body .container .content .corners .left-logo, body .container .content .corners .right-logo {
+  position: absolute;
+  top: 30px;
+}
+body .container .content .corners .copyright {
+  left: 30px;
+}
+body .container .content .corners .label {
+  right: 30px;
+}
+body .container .content .corners .copyright,
+body .container .content .corners .label {
+  position: absolute;
+  bottom: 30px;
+  font-size: 12px;
+}
+body .container .bg-bottom-left {
+  bottom: -300px;
+  left: -300px;
+}
+body .container .bg-up-right {
+  top: -300px;
+  right: -300px;
+}
+body .container .bg-bottom-left, body .container .bg-up-right {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}
+body .container .bg-bottom-left img, body .container .bg-up-right img {
+  width: 100%;
+  height: 100%;
+}
+body .container .bg-up-left {
+  position: absolute;
+  top: -80px;
+  left: -40px;
+  z-index: -10;
+  width: 200px;
+  height: 200px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+}
